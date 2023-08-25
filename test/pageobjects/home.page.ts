@@ -9,7 +9,7 @@ class HomePage extends basePage {
     private get resultListName() { return $$(locaters.homePage.searchFunction.resultListName); }
     private get resultListCity() { return $$(locaters.homePage.searchFunction.resultListCity); }
 
-    //direcltyClick is only for temporary solution
+    //direcltyClick is only for temporary solution, check out test file
     get direcltyClickLocator() { return $("div[class='search-cards'] div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(2)") }
 
 
