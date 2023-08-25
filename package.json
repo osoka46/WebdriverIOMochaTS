@@ -11,6 +11,10 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "wdio": "wdio run ./wdio.conf.ts",
+    "report":"allure generate allure-results --clean && allure open"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.23.1"
   }
 }

@@ -1,0 +1,22 @@
+{
+    "homePage":{
+        "cookie":{
+            "agreeAllCookieButton":"button[class='consent-button agree-consent--all']",
+            "agreeNecessaryCookieButton":"......"
+        },
+        "searchFunction":{
+            "inputPlaceHolder":"input[placeholder='Fachbereich, Name des Arztes, Praxis oder Einrichtung']",
+            "resultListName":"div[class='search-card-physician-name ng-star-inserted']",
+            "resultListCity":"span[class='search-card-city ng-star-inserted']"
+        }
+    },
+    "physicianSearchPage":
+    {
+        "imageContent":"img[src='assets/img/avatars/doc-male.svg']",
+        "docName":"div[class='header-title-container']",
+        "docAddress":"a[data-web-test='address-link']",
+        "currentWorkingHours":"div[class='text-day-hours-container__items current-date ng-star-inserted']",
+        "currentWorkingDay":"div[class='text-day__item--text current-date']"
+    }
+}
+

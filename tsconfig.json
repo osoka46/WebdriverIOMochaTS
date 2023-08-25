@@ -13,6 +13,7 @@
         "noEmit": true,
         "allowImportingTsExtensions": true,
         "resolveJsonModule": true,
+        "esModuleInterop": true,
         "isolatedModules": true,
         "strict": true,
         "noUnusedLocals": true,
@@ -20,6 +21,6 @@
         "noFallthroughCasesInSwitch": true
     },
     "include": [
-        "src"
+        "**/*"
     ]
 }

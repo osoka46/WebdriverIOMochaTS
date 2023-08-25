@@ -1,0 +1,25 @@
+{
+    "inputText":{
+        "name":"Dr. Peter Test",
+        "city":"Neuwied"},
+    "expectedValue":{
+        "name":"Dr. Peter Test",
+        "city":"Neuwied",
+        "address":"Blücherstraße 10\n56564 Neuwied",
+        "workingDays":{
+            "fullDays":[
+                "Mo.",
+                "Di.",
+                "Do.",
+                "Fr." 
+            ], 
+            "halfDays":[
+                "Mi."
+            ]
+        },
+        "workingHours":{
+            "halfDayTimes":"09:00 Uhr\n-\n14:00 Uhr",
+            "fullDayTimes":"09:00 Uhr\n-\n12:00 Uhr\n14:00 Uhr\n-\n18:00 Uhr"
+        }
+    }
+}
