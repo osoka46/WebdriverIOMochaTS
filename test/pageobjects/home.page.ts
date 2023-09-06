@@ -7,8 +7,6 @@ import physicianValue from "../data/physicianValue.json" assert {type: "json"};
 class HomePage extends basePage {
     private get agreeAllCookieButton() { return $(locaters.homePage.cookie.agreeAllCookieButton); }
     private get inputPlaceHolder() { return $(locaters.homePage.searchFunction.inputPlaceHolder); }
-    //private get resultListName() { return $$(locaters.homePage.searchFunction.resultListName); }
-    //private get resultListCity() { return $$(locaters.homePage.searchFunction.resultListCity); }
     private get resultListNameCity() { return $$(locaters.homePage.searchFunction.resultListNameCity); }
 
 
