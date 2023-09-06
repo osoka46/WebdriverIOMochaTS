@@ -9,14 +9,11 @@ describe('Validation of physician view, name, address and working hours', async 
         homePage.openUrl();
         homePage.maximizeWindow();
         homePage.agreeAllCookie();
-        /*normally i'd use following "seachFunction",more maintable and usefull, but i'm still new WebdriverIO and TS, somehow it did not work and 
-        still working to find a solution. "getPyhsicianPageDirectly" is only for temporarly solution.*/
-
-        //homePage.seachFunction(physicianValue.inputText.name,physicianValue.inputText.city);
-        homePage.getPyhsicianPageDirectly(physicianValue.inputText.name);
+        homePage.seachFunction(physicianValue.inputText.name);
     })
 
     it('physician view should display', async () => {
+        await physicianPage.imageContent.waitForDisplayed({ timeout: 10000 })
         await expect(physicianPage.imageContent).toBeDisplayed();
     })
 
@@ -30,7 +27,7 @@ describe('Validation of physician view, name, address and working hours', async 
 
     it('physician current working day start and end time should display ', async () => {
         const workingDayOnPage = await physicianPage.currentWorkingDay.getText();
-        const workingHoursOnPage=await physicianPage.currentWorkingHours.getText();
+        const workingHoursOnPage = await physicianPage.currentWorkingHours.getText();
         // there is only one half day, which is wednesday ==> index=0
         if (workingDayOnPage === physicianValue.expectedValue.workingDays.halfDays[0]) {
             await expect(workingHoursOnPage).toEqual(physicianValue.expectedValue.workingHours.halfDayTimes);

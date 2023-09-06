@@ -5,6 +5,7 @@
     "expectedValue":{
         "name":"Dr. Peter Test",
         "city":"Neuwied",
+        "nameCity":"Dr. Peter Test\nNeuwied",
         "address":"Blücherstraße 10\n56564 Neuwied",
         "workingDays":{
             "fullDays":[
